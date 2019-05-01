@@ -7,6 +7,7 @@ class UserController {
           .with('state.city')
           .fetch()
           return countries;
+          
     }
     async getCity({ request, response }) {
          const citties = await City.query()
